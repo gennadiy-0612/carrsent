@@ -1449,6 +1449,11 @@ body {
         margin: auto;
     }
 
+    .images__svg {
+        width: 150px;
+        width: 150px;
+    }
+
     .advantage .view .text {
         margin-left: auto;
         margin-right: auto;
@@ -1511,12 +1516,12 @@ body {
         height: 250px;
         box-shadow: 0 0 4px 0 #949494;
         float: left;
-        direction: block;
     }
 
-    .port__foto{
+    .port__foto {
         border-radius: 125px;
     }
+
     .slider .tt {
         font-family: 'Proxima Nova', serif;
         font-size: 30px;
