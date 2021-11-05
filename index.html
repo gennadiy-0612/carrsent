@@ -11,7 +11,13 @@
 <body>
 <div class="main">
     <header class="top-info">
-        <a title="Title" class="logo" href="#"><img alt="alternate" src="./img/logo.png"></a>
+        <a title="Title" class="logo" href="#">
+            <picture class="map">
+                <source srcset="./img/hide-car.webp" type="image/webp">
+                <source srcset="./img/logo.png" type="image/png">
+                <img alt="alternate" loading="lazy" src="./img/logo.png">
+            </picture>
+        </a>
         <h1 class="common title"><span class="desktop">Аренда авто</span></h1>
         <p class="slogan">Автомобиль который<br> вас не подведет</p>
         <p class="address">Свободная улица, 16<br> г. Белгород</p>
@@ -479,12 +485,20 @@
         <p class="slogan">Автомобиль который<br> вас не подведет</p>
         <ul class="nets">
             <li class="name">Наши контакты:</li>
-            <li class="icon"><a title="Title" href="#"><img alt="alternate" class="connect"
-                                                            src="./img/instagram-sketched.png"></a></li>
-            <li class="icon"><a title="Title" href="#"><img alt="alternate" class="connect"
-                                                            src="./img/whatsapp.png"></a></li>
-            <li class="icon"><a title="Title" href="#"><img alt="alternate" class="connect"
-                                                            src="./img/iconfinder_vkontakte_386743.png"></a></li>
+            <li class="icon">
+                <a title="Title" href="#">
+                    <img alt="alternate" class="connect" src="./img/instagram-sketched.png">
+                </a>
+            </li>
+            <li class="icon">
+                <a title="Title" href="#">
+                    <img alt="alternate" class="connect" src="./img/whatsapp.png">
+                </a>
+            </li>
+            <li class="icon"><a title="Title" href="#">
+                <img alt="alternate" class="connect" src="./img/iconfinder_vkontakte_386743.png">
+            </a>
+            </li>
         </ul>
         <p class="confident"><a title="Title" href="#">Политика конфиденциальности</a></p>
         <ul class="top phones">
