@@ -145,12 +145,11 @@ body {
     .make {
         margin: 44px auto 0;
     }
-    .base__image{
+
+    .base__image {
         max-width: 342px;
         height: 125px;
         margin: 44px auto 0;
-        background: url(../img/2012-toyota-camry.png) center no-repeat;
-        background-size: contain;
     }
 
     .arrow {
