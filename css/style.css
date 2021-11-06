@@ -238,7 +238,6 @@ body {
         box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
         border-radius: 8px;
         margin: 0 auto 49px;
-        padding: 150px 0 0;
     }
 
     .data {
@@ -255,24 +254,6 @@ body {
         margin: 18px 16px -8px;
     }
 
-    .car:nth-child(1) {
-        background: url(../img/mazda-6.png) top center no-repeat;
-        background-size: 346px 248px;
-        background-position-y: -49px;
-    }
-
-    .car:nth-child(2) {
-        background: url(../img/chevrolet-lacetti.png) top center no-repeat;
-        background-size: 346px 243px;
-        background-position-y: -49px;
-    }
-
-    .car:nth-child(3) {
-        background: url(../img/chevrolet-aveo.png) top center no-repeat;
-        background-size: 311px 222px;
-        background-position-y: -44px;
-    }
-
     .car .info {
         margin: 0;
         padding: 0;
@@ -281,6 +262,12 @@ body {
         justify-content: space-between;
         align-items: center;
         text-align: center;
+    }
+
+    .car__details {
+        width: 100%;
+        display: flex;
+        justify-content: center;
     }
 
     .car .read {
@@ -338,7 +325,9 @@ body {
         margin: 21px 9% 0;
     }
 
-    .images {
+    .images__svg {
+        width: 50px;
+        height: 50px;
     }
 
     .images img {
@@ -2017,26 +2006,6 @@ div.car a.read {
     color: #fff;
     background-color: #333;
     transition: color, background-color .7s;
-}
-
-.slider:nth-of-type(1) .port {
-    background: url(../img/catirina.png) no-repeat;
-}
-
-.slider:nth-of-type(2) .port {
-    background: url(../img/otziv2.png) no-repeat;
-}
-
-.slider:nth-of-type(3) .port {
-    background: url(../img/otziv3.png) no-repeat;
-}
-
-.slider:nth-of-type(4) .port {
-    background: url(../img/otziv4.png) no-repeat;
-}
-
-.slider:nth-of-type(5) .port {
-    background: url(../img/otziv5.png) no-repeat;
 }
 
 .counter span {
