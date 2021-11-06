@@ -1482,6 +1482,9 @@ body {
         border-bottom: 1px solid #000;
         width: 206px;
         margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     .advantage .view .text {
