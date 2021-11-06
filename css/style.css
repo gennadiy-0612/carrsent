@@ -118,7 +118,13 @@ body {
         padding: 24px 0;
         width: 42%;
     }
-
+.rent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
     .sub.title, .choice.title, .conditions .t, .free .cons, .advantage .t, .emotions .t, .rent-auto .t, .faq .t {
         margin: 3px 0 0 0;
         font-size: 25px;
