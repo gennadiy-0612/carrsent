@@ -1183,20 +1183,6 @@ body {
         margin: 0 auto 49px;
     }
 
-    .car:nth-child(1) {
-        background: url(../img/mazda-6.png) left center no-repeat;
-    }
-
-
-    .car:nth-child(2) {
-        background: url(../img/chevrolet-lacetti.png) left center no-repeat;
-    }
-
-
-    .car:nth-child(3) {
-        background: url(../img/chevrolet-aveo.png) left center no-repeat;
-    }
-
     .data {
         border-radius: 0 8px 8px 0;
         margin-left: 51.7%;
