@@ -149,7 +149,7 @@ body {
     .arrow {
         width: 14px;
         height: 27px;
-        margin: auto;
+        margin: 10px auto;
         display: block;
     }
 
