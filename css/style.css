@@ -138,7 +138,7 @@ body {
         margin: 44px auto 0;
     }
 
-    .image {
+    .base__image {
         max-width: 342px;
         height: 125px;
         margin: 44px auto 0;
@@ -978,7 +978,7 @@ body {
         margin: 0 auto 47px;
     }
 
-    .image {
+    .base__image {
         width: 722px;
         height: 241px;
         margin: auto;
@@ -1026,7 +1026,6 @@ body {
     /*Features start*/
     .back {
         background-color: #333333;
-        /* width: 100%; */
     }
 
     .features {
@@ -1230,10 +1229,6 @@ body {
 
     /*Choice zone finish*/
     /*Conditions zone start*/
-    .conditions {
-        /* padding: 0 0 55px 0; */
-    }
-
     .t {
         margin: 149px 0 24px;
     }
@@ -1909,7 +1904,6 @@ body {
 
     .techno .car {
         background-size: 100% auto;
-        /* background-position-y: initial; */
     }
 
     .what {
@@ -2006,6 +2000,10 @@ div.car a.read {
     margin: 13px 0 0 2px;
     text-decoration: none;
     border-radius: 8px;
+}
+
+.pointer {
+    cursor: pointer;
 }
 
 .changing a.read:hover, li.automate:hover, .active, .make.choice:hover, .mechanic:hover, .call-back input:hover, .slider .make.choice:hover, .to.order:hover, .slider .make.choice:hover, .counter span:hover, .counter .active {
