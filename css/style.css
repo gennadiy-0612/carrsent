@@ -38,6 +38,14 @@ body {
     margin: 0;
 }
 
+.base {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
 @media (max-width: 500px) {
     .buttons {
         flex-direction: column;
@@ -118,13 +126,7 @@ body {
         padding: 24px 0;
         width: 42%;
     }
-.rent {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-}
+
     .sub.title, .choice.title, .conditions .t, .free .cons, .advantage .t, .emotions .t, .rent-auto .t, .faq .t {
         margin: 3px 0 0 0;
         font-size: 25px;
@@ -2096,5 +2098,6 @@ div.car a.read {
     animation: .7s ease-out 0s infinite alternate appear;
     animation-iteration-count: 1;
 }
+
 /*Bug fixed*/
 
