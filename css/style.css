@@ -1278,6 +1278,11 @@ body {
         padding: 0;
     }
 
+    .images__svg {
+        height: 150px;
+        width: 150px;
+    }
+
     .cond.details {
         margin: 0;
     }
