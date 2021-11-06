@@ -247,6 +247,7 @@ body {
 
     .car__details img {
         width: 90%;
+        max-width: 460px;
     }
 
     .car li, .car h3 {
@@ -255,6 +256,7 @@ body {
 
     .car:nth-child(1), .car:nth-child(2), .car:nth-child(3) {
         margin: 18px 16px -8px;
+        padding: 0;
     }
 
     .car .info {
