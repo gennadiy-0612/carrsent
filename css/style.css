@@ -1287,10 +1287,6 @@ body {
         margin: 0;
     }
 
-    .cond:nth-child(1) .images {
-        border-bottom: 0;
-    }
-
     .images {
         border-bottom: 1px solid #000;
         padding: 0 0 33px 0;
