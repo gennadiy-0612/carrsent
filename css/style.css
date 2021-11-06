@@ -141,15 +141,15 @@ body {
     .image {
         max-width: 342px;
         height: 125px;
-        margin: 0 auto 0;
+        margin: 44px auto 0;
         background: url(../img/2012-toyota-camry.png) center no-repeat;
         background-size: contain;
     }
 
     .arrow {
-        width: 14px;
-        height: 27px;
-        margin: 10px auto;
+        width: 44px;
+        height: 77px;
+        margin: 34px auto 65px;
         display: block;
     }
 
@@ -237,7 +237,7 @@ body {
 
     .data {
         background: #333333;
-        padding: 4px 13px 9px;
+        padding: 4px 13px 17px;
         border-radius: 0 0 8px 8px;
     }
 
