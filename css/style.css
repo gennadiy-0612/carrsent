@@ -466,18 +466,13 @@ body {
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
     }
 
-    .slider p.port {
+    .port__foto {
         border-radius: 125px;
-        background: url("../img/catirina.png") no-repeat;
         background-size: contain;
         width: 102px;
         height: 101px;
         box-shadow: 0 0 4px 0 #949494;
         margin: auto;
-    }
-
-    .emotions .slider p.port {
-        background-size: cover;
     }
 
     .tt {
