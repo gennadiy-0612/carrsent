@@ -145,8 +145,7 @@ body {
     .make {
         margin: 44px auto 0;
     }
-    .base__image,
-    .image {
+    .base__image{
         max-width: 342px;
         height: 125px;
         margin: 44px auto 0;
