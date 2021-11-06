@@ -90,7 +90,7 @@ body {
         position: absolute;
         top: 4px;
         right: 0;
-        background: url("../img/hide-car.png") center center no-repeat;
+        background: url(../img/hide-car.png) center center no-repeat;
         background-size: contain;
     }
 
@@ -138,16 +138,18 @@ body {
         margin: 44px auto 0;
     }
 
-    .base__image {
+    .image {
         max-width: 342px;
         height: 125px;
-        margin: 44px auto 0;
+        margin: 0 auto 0;
+        background: url(../img/2012-toyota-camry.png) center no-repeat;
+        background-size: contain;
     }
 
     .arrow {
-        width: 44px;
-        height: 77px;
-        margin: 34px auto 65px;
+        width: 14px;
+        height: 27px;
+        margin: auto;
         display: block;
     }
 
@@ -239,24 +241,30 @@ body {
         border-radius: 0 0 8px 8px;
     }
 
-    .car__details {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-    }
-
-    .car__details img {
-        width: 90%;
-        max-width: 460px;
-    }
-
     .car li, .car h3 {
         color: #fff;
     }
 
     .car:nth-child(1), .car:nth-child(2), .car:nth-child(3) {
         margin: 18px 16px -8px;
-        padding: 0;
+    }
+
+    .car:nth-child(1) {
+        background: url(../img/mazda-6.png) top center no-repeat;
+        background-size: 346px 248px;
+        background-position-y: -49px;
+    }
+
+    .car:nth-child(2) {
+        background: url(../img/chevrolet-lacetti.png) top center no-repeat;
+        background-size: 346px 243px;
+        background-position-y: -49px;
+    }
+
+    .car:nth-child(3) {
+        background: url(../img/chevrolet-aveo.png) top center no-repeat;
+        background-size: 311px 222px;
+        background-position-y: -44px;
     }
 
     .car .info {
@@ -324,14 +332,7 @@ body {
         margin: 21px 9% 0;
     }
 
-
-    .images__svg {
-        height: 50px;
-        width: 50px;
-    }
-
     .images {
-        flex: 1 1 50px;
     }
 
     .images img {
@@ -349,7 +350,6 @@ body {
         line-height: 20px;
         margin: 5px 6% 0 14%;
         font-weight: 600;
-        flex: 10 1 50px;
     }
 
     /*free cons*/
@@ -446,7 +446,6 @@ body {
         margin-top: 7px;
         margin-bottom: 0;
         line-height: 15px;
-        flex: 10 1 50px;
     }
 
     /*emotions*/
@@ -478,17 +477,18 @@ body {
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
     }
 
-    .port {
-        display: flex;
-    }
-
-    .port__foto {
+    .slider p.port {
         border-radius: 125px;
+        background: url(../img/catirina.png) no-repeat;
         background-size: contain;
         width: 102px;
         height: 101px;
         box-shadow: 0 0 4px 0 #949494;
         margin: auto;
+    }
+
+    .emotions .slider p.port {
+        background-size: cover;
     }
 
     .tt {
@@ -511,7 +511,7 @@ body {
         width: 28px;
         height: 35px;
         display: block;
-        background: url("../img/arrows.svg") center center no-repeat;
+        background: url(../img/arrows.svg) center center no-repeat;
         background-size: contain;
     }
 
@@ -654,7 +654,7 @@ body {
         content: '';
         height: 25px;
         width: 42px;
-        background: url("../img/arrow-down.svg") center center no-repeat #fff;
+        background: url(../img/arrow-down.svg) center center no-repeat #fff;
         display: block;
         position: absolute;
         right: 6%;
@@ -909,7 +909,7 @@ body {
         color: #333333;
         width: 136px;
         padding: 0 0 0 60px;
-        background: url("../img/map-point.png") 25px 0 no-repeat;
+        background: url(../img/map-point.png) 25px 0 no-repeat;
     }
 
     .top.phones {
@@ -990,10 +990,11 @@ body {
         margin: 0 auto 47px;
     }
 
-    .base__image {
+    .image {
         width: 722px;
         height: 241px;
         margin: auto;
+        background: url(../img/2012-toyota-camry.png) no-repeat;
     }
 
     .arrow {
@@ -1038,6 +1039,7 @@ body {
     /*Features start*/
     .back {
         background-color: #333333;
+        /* width: 100%; */
     }
 
     .features {
@@ -1161,19 +1163,27 @@ body {
         border-radius: 8px;
         width: 892px;
         margin: 0 auto 49px;
-        display: flex;
-        align-items: center;
     }
 
-    .car__details {
-        flex: 1 1 auto;
+    .car:nth-child(1) {
+        background: url(../img/mazda-6.png) left center no-repeat;
+    }
+
+
+    .car:nth-child(2) {
+        background: url(../img/chevrolet-lacetti.png) left center no-repeat;
+    }
+
+
+    .car:nth-child(3) {
+        background: url(../img/chevrolet-aveo.png) left center no-repeat;
     }
 
     .data {
         border-radius: 0 8px 8px 0;
+        margin-left: 51.7%;
         background: #333333;
         padding: 24px 24px 17px;
-        flex: 1 1 auto;
     }
 
     .car .info {
@@ -1241,6 +1251,10 @@ body {
 
     /*Choice zone finish*/
     /*Conditions zone start*/
+    .conditions {
+        /* padding: 0 0 55px 0; */
+    }
+
     .t {
         margin: 149px 0 24px;
     }
@@ -1293,7 +1307,7 @@ body {
 
     /*Free start*/
     .free {
-        background: url("../img/car.png") 66px 179px no-repeat #333;
+        background: url(../img/car.png) 66px 179px no-repeat #333;
         height: 645px;
         margin-top: 80px;
         margin-bottom: 75px;
@@ -1433,11 +1447,11 @@ body {
     .our::before {
         left: -116px;
         top: 60px;
-        background: url("../img/cruel-arrow.svg") 0 0 no-repeat;
+        background: url(../img/cruel-arrow.svg) 0 0 no-repeat;
     }
 
     .our::after {
-        background: url("../img/car-keys.png") 0 0 no-repeat;
+        background: url(../img/car-keys.png) 0 0 no-repeat;
         top: -148px;
         left: -160px;
     }
@@ -1450,9 +1464,6 @@ body {
     .advantage .cond.details {
         width: 250px;
         margin: 0 0 59px 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
     }
 
     .advantage .condition {
@@ -1465,16 +1476,6 @@ body {
         border-bottom: 1px solid #000;
         width: 206px;
         margin: auto;
-        display: flex;
-        justify-content: center;
-        align-content: center;
-        flex-wrap: wrap;
-        height: 206px;
-    }
-
-    .images__svg {
-        height: 150px;
-        width: 150px;
     }
 
     .advantage .view .text {
@@ -1533,16 +1534,13 @@ body {
         display: none;
     }
 
-    .port {
+    .slider .port {
         border-radius: 125px;
+        background: url(../img/catirina.png) no-repeat;
         width: 250px;
         height: 250px;
         box-shadow: 0 0 4px 0 #949494;
         float: left;
-    }
-
-    .port__foto {
-        border-radius: 125px;
     }
 
     .slider .tt {
@@ -1582,7 +1580,7 @@ body {
         width: 30px;
         height: 64px;
         display: block;
-        background: url("../img/arrows.svg") center center no-repeat;
+        background: url(../img/arrows.svg) center center no-repeat;
     }
 
     .back-go {
@@ -1716,7 +1714,7 @@ body {
         content: '';
         height: 25px;
         width: 42px;
-        background: url("../img/arrow-down.svg") center center no-repeat #fff;
+        background: url(../img/arrow-down.svg) center center no-repeat #fff;
         display: block;
         position: absolute;
         right: 15px;
@@ -1916,6 +1914,7 @@ body {
 
     .techno .car {
         background-size: 100% auto;
+        /* background-position-y: initial; */
     }
 
     .what {
@@ -1971,16 +1970,10 @@ body {
     }
 }
 
-.q {
-    display: flex;
-    justify-content: center;
-}
 
-.base {
+.per.day + p, .q {
     display: flex;
     justify-content: center;
-    flex-direction: column;
-    align-items: center;
 }
 
 .make.choice, .to.order, .questions {
@@ -2014,14 +2007,30 @@ div.car a.read {
     border-radius: 8px;
 }
 
-.pointer {
-    cursor: pointer;
-}
-
 .changing a.read:hover, li.automate:hover, .active, .make.choice:hover, .mechanic:hover, .call-back input:hover, .slider .make.choice:hover, .to.order:hover, .slider .make.choice:hover, .counter span:hover, .counter .active {
     color: #fff;
     background-color: #333;
     transition: color, background-color .7s;
+}
+
+.slider:nth-of-type(1) .port {
+    background: url(../img/catirina.png) no-repeat;
+}
+
+.slider:nth-of-type(2) .port {
+    background: url(../img/otziv2.png) no-repeat;
+}
+
+.slider:nth-of-type(3) .port {
+    background: url(../img/otziv3.png) no-repeat;
+}
+
+.slider:nth-of-type(4) .port {
+    background: url(../img/otziv4.png) no-repeat;
+}
+
+.slider:nth-of-type(5) .port {
+    background: url(../img/otziv5.png) no-repeat;
 }
 
 .counter span {
@@ -2081,6 +2090,5 @@ div.car a.read {
     animation: .7s ease-out 0s infinite alternate appear;
     animation-iteration-count: 1;
 }
-
 /*Bug fixed*/
 
