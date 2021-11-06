@@ -46,6 +46,13 @@ body {
     flex-wrap: wrap;
 }
 
+.arrow {
+    width: 44px;
+    height: 77px;
+    margin: 34px auto 65px;
+    display: block;
+}
+
 @media (max-width: 500px) {
     .buttons {
         flex-direction: column;
@@ -150,13 +157,6 @@ body {
         max-width: 342px;
         height: 125px;
         margin: 44px auto 0;
-    }
-
-    .arrow {
-        width: 44px;
-        height: 77px;
-        margin: 34px auto 65px;
-        display: block;
     }
 
     /*Features*/
