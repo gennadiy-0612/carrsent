@@ -311,13 +311,13 @@ body {
     .condition {
         margin: 21px 9% 0;
     }
-    
-    
-.images__svg {
-  height: 50px;
-  width: 50px;
-}
-    
+
+
+    .images__svg {
+        height: 50px;
+        width: 50px;
+    }
+
     .images {
         flex: 1 1 50px;
     }
@@ -465,8 +465,11 @@ body {
         bottom: -6px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
     }
-    
-    .port{display: flex;}
+
+    .port {
+        display: flex;
+    }
+
     .port__foto {
         border-radius: 125px;
         background-size: contain;
@@ -1962,10 +1965,16 @@ body {
     }
 }
 
-
-.per.day + p, .q {
+.q {
     display: flex;
     justify-content: center;
+}
+
+.base {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 .make.choice, .to.order, .questions {
