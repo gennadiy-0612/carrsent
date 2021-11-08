@@ -1693,6 +1693,12 @@ body {
         float: left;
     }
 
+    .port__foto {
+        width: 250px;
+        height: 250px;
+        border-right: 125px;
+    }
+
     .slider .tt {
         font-family: 'Proxima Nova', serif;
         font-size: 30px;
@@ -2119,7 +2125,7 @@ body {
     animation-iteration-count: 1;
 }
 
-.Observ {
+.Observe {
     transition-property: opacity;
     transition-duration: 1s;
 }

@@ -105,7 +105,7 @@ function vdHandler(els, detector) {
 
 const vd = new IntersectionObserver(vdHandler, options);
 
-const cImgs = document.querySelectorAll('.Observ');
+const cImgs = document.querySelectorAll('.Observe');
 cImgs.forEach((el) => {
     vd.observe(el);
 });
