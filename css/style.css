@@ -51,7 +51,7 @@ body {
 }
 
 .make.choice {
-   margin: auto;
+    margin: auto;
 }
 
 .arrow {
@@ -998,7 +998,7 @@ body {
 
     /* Header start*/
     .top-info {
-        margin: 24px auto 0;
+        margin: 0 auto;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -1036,7 +1036,7 @@ body {
         text-align: center;
         letter-spacing: 0.05em;
         text-transform: uppercase;
-        margin: 70px 0 0;
+        margin: 10px 0;
         color: #333;
     }
 
@@ -2031,7 +2031,7 @@ body {
     }
 }
 
-.per.day + p, .q {
+.base + p, .q {
     display: flex;
     justify-content: center;
 }
@@ -2049,6 +2049,10 @@ body {
     font-family: 'Proxima Nova', serif;
     color: #333;
     padding: 0 25px;
+}
+
+.make.choice {
+    margin: 20px auto;
 }
 
 .changing a.read:hover, li.automate:hover, .active, .make.choice:hover, .mechanic:hover, .call-back input:hover, .slider .make.choice:hover, .to.order:hover, .slider .make.choice:hover, .counter span:hover, .counter .active {
