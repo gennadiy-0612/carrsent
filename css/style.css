@@ -1673,14 +1673,15 @@ body {
 
     /*slider start*/
     .slider.show {
-        width: 808px;
-        margin: auto;
-        padding: 88px 201px 227px;
-        position: relative;
         display: block;
     }
 
     .slider {
+        width: 808px;
+        min-height: 221px;
+        margin: auto;
+        padding: 88px 201px 227px;
+        position: relative;
         display: none;
     }
 
