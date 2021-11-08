@@ -53,6 +53,140 @@ body {
     display: block;
 }
 
+.point {
+    cursor: pointer;
+}
+
+@media (max-width: 270px) {
+    .techno .car {
+        background-size: 100% auto;
+        background-position-y: initial;
+    }
+}
+
+@media (max-width: 375px) {
+    h1, li, a, p {
+        word-break: break-all;
+    }
+
+    ul.what {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        height: 90px;
+    }
+
+    .changing {
+        margin: 15px auto;
+        width: max-content;
+    }
+
+    .make {
+        max-width: 145px;
+    }
+
+    .info {
+        display: block;
+    }
+
+    .order {
+        min-width: initial;
+    }
+
+    .add {
+        margin: 15px auto 0;
+        display: flex;
+        justify-content: space-around;
+        max-width: 300px;
+    }
+
+    .techno .car {
+        background-size: 100% auto;
+    }
+
+    .what {
+        display: block;
+        width: auto;
+    }
+
+    .kind {
+        margin: 20px auto;
+        padding: 0;
+    }
+}
+
+@media (max-width: 400px) {
+    /*Header mobile*/
+    .address, .top.phones, .to.order, .desktop {
+        display: none;
+    }
+
+    h1.common.title {
+        left: -123px;
+        top: 73px;
+    }
+
+    .car .changing .read {
+        margin: 0;
+        display: flex;
+        padding: 5px 16px;
+    }
+
+    ul.features {
+        flex-direction: column;
+        align-content: center;
+    }
+
+    .buttons {
+        flex-direction: column;
+    }
+
+    .buttons .make.choice {
+        margin: 5px auto;
+    }
+
+    p.changing {
+        margin: 0;
+    }
+
+    .mobile.slog {
+        font-size: 84px;
+    }
+
+    .vertical {
+        transform: rotate(-91deg);
+        display: block;
+        position: relative;
+        left: 0;
+        margin: 0 0 0 100px;
+    }
+}
+
+@media (max-width: 500px) {
+    .buttons {
+        flex-direction: column;
+    }
+
+    .info.order {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .add {
+        margin: 20px 0 0;
+    }
+
+    .buttons .make.choice {
+        margin: 10px auto;
+    }
+
+    a.make.choice {
+        margin: 30px 0 0;
+    }
+}
+
 @media (max-width: 1199px) {
     .common.title, .name, .map, .address, .address ~ *, .to.order.make, .nets, .car ol.info, .our, .slider .make, .slider .counter, .rent-auto p:nth-of-type(4)::after {
         display: none;
@@ -140,8 +274,7 @@ body {
     }
 
     .base__image {
-        max-width: 342px;
-        height: 125px;
+        max-width: 100%;
         margin: 44px auto 0;
     }
 
@@ -239,7 +372,7 @@ body {
         max-width: 330px;
     }
 
-    .car li, .car h3 {
+    .car li, .data__read {
         color: #fff;
     }
 
@@ -247,7 +380,7 @@ body {
         margin: 18px 16px -8px;
     }
 
-    .car .info {
+    .info {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -265,14 +398,10 @@ body {
         width: 90%;
     }
 
-    .car .read {
+    .read {
         color: #fff;
         margin: 0;
         line-height: 22px;
-    }
-
-    .add {
-        margin: 0 7% 0 0;
     }
 
     .add .read {
@@ -284,28 +413,32 @@ body {
         font-size: 18px;
     }
 
-    .car h3.info {
+    .info {
         justify-content: center;
         padding: 12px 0 8px;
         font-size: 18px;
         font-weight: 600;
-        letter-spacing: 3px;
     }
 
-    .info {
-        min-width: 360px;
+    .data__read {
+        max-width: 300px;
     }
 
     .changing {
-        margin: 0;
+        margin: 0 20px 0 0;
     }
 
-    .car a.read {
+    .info__read {
         height: 33px;
         line-height: 32px;
-        max-width: 168px;
         font-size: 14px;
         background-color: #fff;
+        color: #333;
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.15);
+        padding: 16px 10px;
+        margin: 13px 0 0;
+        text-decoration: none;
+        border-radius: 8px;
     }
 
     /*Cond*/
@@ -1160,6 +1293,14 @@ body {
         line-height: 19px;
     }
 
+    .changing .read {
+        margin: 0;
+        display: flex;
+        text-decoration: none;
+        background-color: #FFFFFF;
+        color: #333333;
+    }
+
     .mechanic {
         position: relative;
         left: 7px;
@@ -1181,7 +1322,7 @@ body {
         flex: 1 1 auto;
     }
 
-    .car .info {
+    .info {
         margin: 0;
         padding: 0;
         display: flex;
@@ -1880,120 +2021,6 @@ body {
     }
 }
 
-@media (max-width: 270px) {
-    .techno .car {
-        background-size: 100% auto;
-        background-position-y: initial;
-    }
-}
-
-@media (max-width: 375px) {
-    h1, li, a, p {
-        word-break: break-all;
-    }
-
-    .changing {
-        margin: 15px auto;
-        width: max-content;
-    }
-
-    .make {
-        max-width: 145px;
-    }
-
-    .car .info {
-        display: block;
-    }
-
-    .order {
-        min-width: initial;
-    }
-
-    .add {
-        margin: 15px auto 0;
-        display: flex;
-        justify-content: space-around;
-        max-width: 300px;
-    }
-
-    .techno .car {
-        background-size: 100% auto;
-    }
-
-    .what {
-        display: block;
-        width: auto;
-    }
-
-    .kind {
-        margin: 20px auto;
-        padding: 0;
-    }
-}
-
-@media (max-width: 400px) {
-    /*Header mobile*/
-    .address, .top.phones, .to.order, .desktop {
-        display: none;
-    }
-
-    h1.common.title {
-        left: -123px;
-        top: 73px;
-    }
-
-    .car .changing .read {
-        margin: 0;
-        padding: 10px;
-    }
-
-    ul.features {
-        flex-direction: column;
-        align-content: center;
-    }
-
-    .buttons {
-        flex-direction: column;
-    }
-
-    .buttons .make.choice {
-        margin: 5px auto;
-    }
-
-    .info.order {
-        min-width: 300px;
-    }
-    .mobile.slog {
-        font-size: 84px;
-    }
-
-    .vertical {
-        transform: rotate(-91deg);
-        display: block;
-        position: relative;
-        left: 0;
-        margin: 0 0 0 100px;
-    }
-}
-
-@media (max-width: 500px) {
-    .buttons {
-        flex-direction: column;
-    }
-
-    .info.order {
-        min-width: 360px;
-    }
-
-    .buttons .make.choice {
-        margin: 10px auto;
-    }
-
-    a.make.choice {
-        margin: 30px 0 0;
-    }
-}
-
 .per.day + p, .q {
     display: flex;
     justify-content: center;
@@ -2012,22 +2039,6 @@ body {
     font-family: 'Proxima Nova', serif;
     color: #333;
     padding: 0 25px;
-}
-
-div.car a.read {
-    width: auto;
-    background-color: white;
-    line-height: 25px;
-    color: #333;
-}
-
-.changing .read {
-    background: #333;
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.15);
-    padding: 16px 35px;
-    margin: 13px 0 0 2px;
-    text-decoration: none;
-    border-radius: 8px;
 }
 
 .changing a.read:hover, li.automate:hover, .active, .make.choice:hover, .mechanic:hover, .call-back input:hover, .slider .make.choice:hover, .to.order:hover, .slider .make.choice:hover, .counter span:hover, .counter .active {
