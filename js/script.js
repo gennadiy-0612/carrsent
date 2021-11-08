@@ -98,8 +98,8 @@ const options = {
 
 function vdHandler(els) {
     els.forEach((data) => {
-        data.target.style.opacity = 0.2 + data.intersectionRatio *
-            0.8;
+        data.target.style.opacity = 0.1 + data.intersectionRatio *
+            0.9;
     });
 }
 
