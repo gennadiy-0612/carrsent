@@ -58,6 +58,10 @@ body {
         flex-direction: column;
     }
 
+    .car .info.order {
+        min-width: 300px;
+    }
+
     .buttons .make.choice {
         margin: 10px auto;
     }
@@ -275,6 +279,10 @@ body {
         justify-content: center;
     }
 
+    .car__auto {
+        width: 90%;
+    }
+
     .car .read {
         color: #fff;
         margin: 0;
@@ -303,7 +311,7 @@ body {
     }
 
     .info {
-        min-width: 460px;
+        min-width: 360px;
     }
 
     .changing {
@@ -313,7 +321,7 @@ body {
     .car a.read {
         height: 33px;
         line-height: 32px;
-        width: 168px;
+        max-width: 168px;
         font-size: 14px;
         background-color: #fff;
     }
@@ -1915,15 +1923,19 @@ body {
         display: block;
     }
 
+    .order {
+        min-width: initial;
+    }
+
     .add {
         margin: 15px auto 0;
         display: flex;
         justify-content: space-around;
+        max-width: 300px;
     }
 
     .techno .car {
         background-size: 100% auto;
-        /* background-position-y: initial; */
     }
 
     .what {
