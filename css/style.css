@@ -632,7 +632,6 @@ body {
 
     .port {
         display: flex;
-
         justify-content: center;
     }
 
@@ -1675,7 +1674,7 @@ body {
     .slider.show {
         width: 808px;
         margin: auto;
-        padding: 88px 201px;
+        padding: 88px 201px 227px;
         position: relative;
         display: block;
     }
@@ -1685,10 +1684,10 @@ body {
     }
 
     .slider .port {
-        border-radius: 125px;
         background: url(../img/catirina.png) no-repeat;
         width: 250px;
         height: 250px;
+        border-radius: 125px;
         box-shadow: 0 0 4px 0 #949494;
         float: left;
     }
@@ -1696,7 +1695,7 @@ body {
     .port__foto {
         width: 250px;
         height: 250px;
-        border-right: 125px;
+        border-radius: 125px;
     }
 
     .slider .tt {
