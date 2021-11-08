@@ -406,6 +406,7 @@ body {
 
     .car__auto {
         width: 90%;
+        max-width: 460px;
     }
 
     .read {
