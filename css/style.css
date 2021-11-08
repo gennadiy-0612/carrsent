@@ -2090,11 +2090,11 @@ body {
 }
 
 .show, .active {
-    animation: .7s linear 0s infinite alternate move_eye;
+    animation: 2s linear 0s infinite alternate appear;
     animation-iteration-count: 1;
 }
 
-@keyframes move_eye {
+@keyframes appear {
     from {
         opacity: 0;
     }
@@ -2117,6 +2117,11 @@ body {
 .appear {
     animation: .7s ease-out 0s infinite alternate appear;
     animation-iteration-count: 1;
+}
+
+.Observ {
+    transition-property: opacity;
+    transition-duration: 1s;
 }
 
 /*Bug fixed*/

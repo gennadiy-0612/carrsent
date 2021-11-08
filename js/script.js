@@ -1,39 +1,3 @@
-// $(":input").inputmask();
-
-// $(".mask").inputmask({"mask": "+7 (999) 999-9999"});
-//
-// $(document).ready(function () {
-//     $(".send-number").click(
-//         function () {
-//             sendAjaxForm('result_form', 'ajax_form', './php/action_ajax_form.php');
-//             return false;
-//         }
-//     );
-// });
-//
-// function sendAjaxForm(result_form, ajax_form, url) {
-//     $.ajax({
-//         url: url, //url страницы (action_ajax_form.php)
-//         type: "POST", //метод отправки
-//         dataType: "html", //формат данных
-//         data: $("#" + ajax_form).serialize(),  // Сеарилизуем объект
-//         success: function (response) { //Данные отправлены успешно
-//             var result = $.parseJSON(response);
-//             $('#result_form').html('<div class="result-detail"><h6>Ваши данные отправлены' +
-//                 '</h6><p>Имя: ' + result.name + '</p>' +
-//                 '<p>Телефон: ' + result.phonenumber + '</p>' +
-//                 '<p class="close">X</p></div>');
-//             document.querySelector('.close').addEventListener('click', close, false);
-//
-//             function close() {
-//                 this.parentNode.parentNode.innerHTML = '';
-//             };
-//         },
-//         error: function (response) { // Данные не отправлены
-//             $('#result_form').html('Ошибка. Данные не отправлены.');
-//         }
-//     });
-// }
 function bugIE(base, added) {
     let images = new Image()
     images.hasWebP = true;
@@ -127,57 +91,21 @@ for (let i = 0; i < cacheAuto.setEmotion.allEl.length; i++) {
     cacheAuto.setEmotion.allEl[i].addEventListener("click", cacheAuto.setEmotion, false);
 }
 
-function ScrollDetect(whoIsAnimate, whatKindAnimate) {
-    this.elementTarget = whoIsAnimate;
-    this.animateClass = whatKindAnimate;
-    this.windowH = window.innerHeight;
-    this.startChanges = 0;
-    this.initProps = function () {
-        if (this.startChanges === 0) {
-            this.elementWork = document.querySelector(this.elementTarget);
-            this.initClass = this.elementWork.getAttribute('class');
-            this.elPositonY = this.elementWork.offsetTop;
-            this.startChanges = 1;
-        }
-    };
-    this.scrolling = function () {
-        this.initProps();
-        if ((this.elPositonY + 100) > Math.floor(window.scrollY) && Math.floor(window.scrollY) > (this.elPositonY - this.windowH)) {
-            this.elementWork.setAttribute('class', this.initClass + ' ' + this.animateClass);
-            console.clear();
-            console.log(this.elementWork);
-        } else {
-            this.elementWork.setAttribute('class', this.initClass);
-        }
-    }
+const options = {
+    rootMargins: '20pt 0pt',
+    threshold: [0.0, 0.2, 0.4, 0.6, 0.8, 1.0]
+};
+
+function vdHandler(els, detector) {
+    els.forEach((data) => {
+        data.target.style.opacity = 0.2 + data.intersectionRatio *
+            0.8;
+    });
 }
 
-ScrollDetect.firstEffect = new ScrollDetect('.sub.title', 'appear');
-window.addEventListener('scroll', ScrollDetect.firstEffect.scrolling.bind(ScrollDetect.firstEffect), false);
-ScrollDetect.firstEffect2 = new ScrollDetect('.per.day', 'appear');
-window.addEventListener('scroll', ScrollDetect.firstEffect2.scrolling.bind(ScrollDetect.firstEffect2), false);
-ScrollDetect.firstEffect3 = new ScrollDetect('.choice.title', 'appear');
-window.addEventListener('scroll', ScrollDetect.firstEffect3.scrolling.bind(ScrollDetect.firstEffect3), false);
-ScrollDetect.firstEffect4 = new ScrollDetect('.variant', 'appear');
-window.addEventListener('scroll', ScrollDetect.firstEffect4.scrolling.bind(ScrollDetect.firstEffect4), false);
-ScrollDetect.firstEffect5 = new ScrollDetect('.conditions .t', 'appear');
-window.addEventListener('scroll', ScrollDetect.firstEffect5.scrolling.bind(ScrollDetect.firstEffect5), false);
-ScrollDetect.firstEffect6 = new ScrollDetect('.conditions .d', 'appear');
-window.addEventListener('scroll', ScrollDetect.firstEffect6.scrolling.bind(ScrollDetect.firstEffect6), false);
-ScrollDetect.firstEffect7 = new ScrollDetect('.advantage .t', 'appear');
-window.addEventListener('scroll', ScrollDetect.firstEffect7.scrolling.bind(ScrollDetect.firstEffect7), false);
-ScrollDetect.firstEffect8 = new ScrollDetect('.emotions .t', 'appear');
-window.addEventListener('scroll', ScrollDetect.firstEffect8.scrolling.bind(ScrollDetect.firstEffect8), false);
-ScrollDetect.firstEffect9 = new ScrollDetect('.rent-auto .t', 'appear');
-window.addEventListener('scroll', ScrollDetect.firstEffect9.scrolling.bind(ScrollDetect.firstEffect9), false);
-ScrollDetect.firstEffect10 = new ScrollDetect('.faq .t', 'appear');
-window.addEventListener('scroll', ScrollDetect.firstEffect10.scrolling.bind(ScrollDetect.firstEffect10), false);
+const vd = new IntersectionObserver(vdHandler, options);
 
-// let i = 0;
-// let clock = setInterval(() => {
-//     ++i;
-//     setTimeout(() => console.log(i), 1000);
-// }, 1000);
-// setTimeout(() => {
-//     clearInterval(clock);
-// }, 10000);
+const cImgs = document.querySelectorAll('.Observ');
+cImgs.forEach((el) => {
+    vd.observe(el);
+});
