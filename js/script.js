@@ -96,7 +96,7 @@ const options = {
     threshold: [0.0, 0.2, 0.4, 0.6, 0.8, 1.0]
 };
 
-function vdHandler(els, detector) {
+function vdHandler(els) {
     els.forEach((data) => {
         data.target.style.opacity = 0.2 + data.intersectionRatio *
             0.8;
