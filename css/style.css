@@ -225,6 +225,7 @@ body {
 
     .head {
         max-width: 500px;
+        position: relative;
     }
     .foot{
         max-width: 600px;
@@ -244,7 +245,7 @@ body {
         display: block;
         position: absolute;
         top: 4px;
-        right: 0;
+        right: -13%;
         background: url("../img/hide-car.png") center center no-repeat;
         background-size: contain;
     }
@@ -253,13 +254,12 @@ body {
         background-color: black;
         width: 2px;
         height: 70px;
-        left: -11%;
+        left: -3%;
     }
 
     .logo img {
         width: auto;
         height: 50px;
-        margin: 0 0 0 28%;
     }
 
     .slogan {
