@@ -699,7 +699,7 @@ body {
     /*rent-auto*/
     .rent-auto {
         counter-reset: section;
-        max-width: 410px;
+        max-width: 390px;
         margin: auto;
     }
 
